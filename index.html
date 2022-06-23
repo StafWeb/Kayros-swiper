@@ -25,8 +25,8 @@
       </div>
       <div class="header__end">
         <form class="header__search"><input type="text"></form>
-        <img сlass="header__user" src="./images/user.svg" alt="user">
-        <img class="header__shop-cart" src="./images/shopping-cart.svg" alt="cart">
+        <img сlass="header__buyer" src="./images/user.svg" alt="buyer">
+        <img class="header__buyer" src="./images/shopping-cart.svg" alt="cart">
         <img class="header__burger" src="./images/burger.svg" alt="burger">
       </div>
     </div>
@@ -35,20 +35,22 @@
   <main>
     <section class="swiper-block">
       <div class="container swiper-block__container">
-        
+        <div class="swiper-block__info">
+          <h3 class="swiper-block__title">Льняная одежда
+            Kayros</h3>
+          <p class="swiper-block__descr">Элегантный образ нужен каждому,у нас есть все необходимое</p>
+        </div>
         <div class="swiper">
-
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-            <div class="swiper-block__info">
-              <h3 class="swiper-block__title">Льняная одежда
-                Kayros</h3>
-              <p class="swiper-block__descr">Элегантный образ нужен каждому,у нас есть все необходимое</p>
-              <div class="swiper-block__pagination">
-                <div class="swiper-pagination"></div>
+              <div class="swiper-slide__info">
+                <div class="swiper-slide__info-wrapper">
+                  <h3 class="swiper-slide__title">Льняная одежда
+                    Kayros</h3>
+                  <p class="swiper-slide__descr">Элегантный образ нужен каждому, <br>у нас есть <br>все необходимое</p>
+                </div>
               </div>
             </div>
-          </div>
             <div class="swiper-slide">
               <div class="swiper-slide__img">
                 <img src="./images/swiper-1.png" alt="swiper-1" data-img>
@@ -57,7 +59,7 @@
             </div>
             <div class="swiper-slide">
               <div class="swiper-slide__img">
-                <img src="./images/swiper-2.png" alt="swiper-2" data-img>
+                <img src="./images/background-header.png" alt="swiper-2" data-img>
               </div>
               <div class="swiper-slide__descr">Платья и сарафаны</div>
             </div>
@@ -89,7 +91,7 @@
         </div>
       </div>
     </section>
-    <section class="cards">
+    <section class="cards none">
       <div class="container cards__container">
         <h2 class="cards__title">Новинки каталога</h2>
         <ul class="cards__list">
@@ -101,7 +103,7 @@
         <a class="cards__btn">Перейти в каталог</a>
       </div>
     </section>
-    <section class="info">
+    <section class="info none">
       <div class="container info__container">
         <div class="info__start">
           <p>Kayros специализируетсяна производстве одежды из 100% натурального льна.</p>
@@ -128,7 +130,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer ">
     <div class="container footer__container">
       <section class="footer__contacts">
         <img class="footer__logo" src="./images/footer-logo.svg" alt="logo">
@@ -172,7 +174,7 @@
       </nav>
     </div>
   </footer>
-  <script src="./js/swiper-bundle.min.js"></script>
+  <!-- <script src="./js/swiper-bundle.min.js"></script> -->
   <script src="./js/main.js"></script>
 </body>
 

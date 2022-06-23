@@ -1,0 +1,33 @@
+.cards {
+  background-color: #f1ebe2;
+  min-height: 100vh;
+}
+.cards__container {
+  padding: 125px 90px;
+}
+.cards__title {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333333;
+}
+.cards__list {
+  display: flex;
+  gap: 75px;
+  margin-top: 95px;
+  margin-bottom: 105px;
+}
+.cards__btn {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 276px;
+  height: 52px;
+  border: 1px solid #b0976e;
+  border-radius: 3px;
+  margin: 0 auto;
+  color: #b0976e;
+}

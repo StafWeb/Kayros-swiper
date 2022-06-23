@@ -1,0 +1,47 @@
+.footer {
+  background-color: #f1ebe2;
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 121px 234px 123px 92px;
+  }
+  &__contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__logo{
+    width: 123px;
+    height: 60px;
+  }
+  &__social-link{
+    display: flex;
+    gap: 20px;
+  }
+  &__link{
+    width: 32px;
+    height: 32px;
+    opacity: 0.5;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  &__item-title {
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+    color: #333333;
+  }
+}

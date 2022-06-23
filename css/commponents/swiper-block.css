@@ -1,0 +1,125 @@
+.swiper-block {
+  min-height: 100vh;
+}
+.swiper-block__container {
+  display: flex;
+  gap: 90px;
+  padding: 125px 0px;
+}
+.swiper-block__info {
+  position: relative;
+  display: grid;
+  padding-bottom: 48px;
+  margin-right: 40px;
+}
+.swiper-block__title {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333333;
+}
+.swiper-block__descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #777777;
+}
+.swiper-block__pagination {
+  position: relative;
+  align-self: flex-end;
+}
+.swiper-block__pagination .swiper-pagination-progressbar {
+  height: 2px;
+  background-color: rgba(176, 151, 110, 0.3);
+}
+.swiper-block__pagination .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: rgba(176, 151, 110, 0.7);
+}
+
+.swiper {
+  cursor: pointer;
+}
+
+.swiper-wrapper {
+  margin-right: 60px;
+}
+
+.swiper-slide {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 331px;
+  height: 542px;
+  visibility: hidden;
+  will-change: scroll-position;
+}
+.swiper-slide:nth-child(1) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.swiper-slide:nth-child(2) {
+  -webkit-animation-delay: 2.3s;
+          animation-delay: 2.3s;
+}
+.swiper-slide:nth-child(3) {
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+}
+.swiper-slide:nth-child(4) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.swiper-slide__img {
+  width: 100%;
+  height: 495px;
+}
+.swiper-slide__img img {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide__descr {
+  align-self: end;
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #777777;
+}
+
+.slideinup {
+  -webkit-animation-name: slideinup;
+          animation-name: slideinup;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  visibility: visible;
+}
+
+@-webkit-keyframes slideinup {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slideinup {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}

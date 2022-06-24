@@ -5,7 +5,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     background-color: #ffffff;
-    color: black;
+    color: #333333;
     display: flex;
     flex-direction: column;
     min-height: 100vh;

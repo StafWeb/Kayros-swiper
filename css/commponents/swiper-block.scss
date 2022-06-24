@@ -49,14 +49,13 @@
 .swiper-wrapper {
   display: flex;
   gap: 60px;
-  // overflow-x: scroll;
-  overflow: auto hidden;
   position: relative;
+  overflow: hidden auto;
   width: 100%;
   height: 100%;
   z-index: 1;
-  // transition-property: transform;
-  // box-sizing: content-box;
+  transition-property: transform;
+  box-sizing: content-box;
   &::-webkit-scrollbar {
     width: 0;
     height: 0;
@@ -65,8 +64,8 @@
 .swiper-slide {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 335px;
-  max-height: 545px;
+  max-width: 330px;
+  max-height: 542px;
   visibility: hidden;
   flex-shrink: 0;
   position: relative;
@@ -91,6 +90,8 @@
     &-wrapper {
       width: 100%;
       height: 542px;
+      display: flex;
+      flex-direction: column;
     }
   }
   &__title {
@@ -112,6 +113,7 @@
     text-transform: uppercase;
     color: #777777;
   }
+
   &__img {
     // width: 330px;
     // max-height: 495px;
@@ -120,16 +122,18 @@
       height: 495px;
     }
   }
-
-  &__descr {
-    align-self: end;
-    margin-top: 25px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 160%;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #777777;
+  &__pagination {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(176, 151, 110, 0.3);
+    .swiper-pagination-progressbar {
+      height: 100%;
+      background-color: rgba(176, 151, 110, 0.3);
+      .swiper-pagination-progressbar-fill {
+        background: rgba(176, 151, 110, 0.7);
+      }
+    }
   }
 }
 .slideinup {
@@ -219,7 +223,30 @@
 // }
 // @media(max-width:)
 @media (max-width: 950px) {
+  .swiper-block__container{
+    padding-left: 21px;
+    padding-top: 80px;
+  }
+  .swiper-wrapper{
+    gap: 20px;
+  }
+  .swiper-block__info {
+    display: grid;
+    justify-items: center;
+  }
+  .swiper-block__descr{
+    width: 345px;
+    text-align: center;
+  }
   .swiper-slide:first-child {
     display: none;
+  }
+}
+
+@media(max-width:600px){
+  .swiper-block__title{
+    font-size: 21px;
+    line-height: 28px;
+    margin-bottom: 25px;
   }
 }

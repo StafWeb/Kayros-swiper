@@ -84,9 +84,13 @@
     display: none;
   }
   .header__end {
-    gap: 5px;
+    gap: 25px;
   }
   .header__buyer {
+    width: 40px;
+    height: 40px;
+  }
+  .header #user {
     width: 40px;
     height: 40px;
   }
